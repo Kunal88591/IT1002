@@ -1,0 +1,19 @@
+1 . wap to find second largest number in list .....
+
+2 . wap to remove duplicates from the list .....
+
+3 . wap to split list into even and odd numbers .....
+
+4 . wap to find sum and average of list elements 
+
+5 . wap to count freuency of elements in list 
+
+6 . wap to convert from tuple to list and list to tuple .....
+
+7 . wap to set operations such as union intersection and difference ......
+
+8 . wap to check if elements exist in tuple 
+
+9 . wap to find maxm and minm value in a tuple 
+
+10 . wap to check subset and super set in set
