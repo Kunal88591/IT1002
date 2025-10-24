@@ -1,0 +1,2 @@
+# Que1 : swap the two elements in given list
+# such that first element swapped by last element and second element swapped by second last element

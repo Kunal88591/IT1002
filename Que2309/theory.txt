@@ -1,0 +1,103 @@
+Python Theory Questions with Answers
+
+Basics & Data Types
+-------------------
+1. What is the difference between mutable and immutable data types in Python? Give examples.
+Answer: Mutable data types can be changed after creation (e.g., list, dict, set). Immutable data types cannot be changed once created (e.g., int, float, string, tuple).
+
+2. Why is a string considered immutable in Python?
+Answer: Because once created, the characters inside a string cannot be modified directly. Any operation that seems to modify a string creates a new one.
+
+3. Explain the difference between list, tuple, and set.
+Answer: List is ordered, mutable, allows duplicates. Tuple is ordered, immutable, allows duplicates. Set is unordered, mutable, does not allow duplicates.
+
+4. What is the difference between shallow copy and deep copy?
+Answer: Shallow copy copies references of objects (changes to nested objects reflect). Deep copy copies everything recursively, creating new nested objects.
+
+5. Why is Python dynamically typed? Give an example.
+Answer: Because variable types are determined at runtime, not during declaration. Example: x = 10 (int), later x = "hello" (string).
+
+Control Flow & Loops
+--------------------
+6. What is the role of the else clause in a for loop?
+Answer: The else block executes only if the loop completes without encountering a break.
+
+7. Explain the difference between break, continue, and pass with examples.
+Answer: break exits the loop entirely. continue skips current iteration. pass does nothing, used as placeholder.
+
+8. What happens if a while loop condition is always True? Give one safe exit method.
+Answer: It results in an infinite loop. Safe exit: use break inside loop.
+
+9. Explain what happens when we use range(5) in Python.
+Answer: It creates a range object representing numbers from 0 to 4.
+
+10. What is the difference between range(5) and list(range(5))?
+Answer: range(5) is a range object, list(range(5)) converts it into a list [0,1,2,3,4].
+
+Functions
+---------
+11. Why should we avoid using mutable objects (like lists) as default arguments in Python functions?
+Answer: Because the default is shared across calls, leading to unexpected behavior.
+
+12. Differentiate between positional, keyword, and default arguments with an example.
+Answer: Positional arguments depend on order, keyword arguments specify by name, default arguments use preset values. Example: def f(a,b=2): pass
+
+13. Explain the concept of variable scope (LEGB rule) in Python.
+Answer: LEGB = Local, Enclosing, Global, Built-in. Python searches variables in this order.
+
+14. What is recursion? Give an example function.
+Answer: A function that calls itself. Example: factorial function.
+
+15. What does the return statement do in a function? What happens if we don’t use return?
+Answer: return sends value back to caller. If omitted, function returns None.
+
+Strings
+-------
+16. What is string slicing? Give an example.
+Answer: Extracting parts of a string using indices. Example: "hello"[1:4] → "ell".
+
+17. Explain the difference between find() and index() methods in strings.
+Answer: Both return position of substring. find() returns -1 if not found, index() raises an error.
+
+18. What is the role of escape sequences like \n, \t, and \\?
+Answer: They represent special characters (newline, tab, backslash).
+
+19. Why is string concatenation using + considered less efficient than join()?
+Answer: Because + creates new strings each time. join() is optimized for multiple concatenations.
+
+20. How does Python treat negative indices in strings?
+Answer: Negative indices count from the end (-1 is last character).
+
+Lists & Collections
+-------------------
+21. Explain the difference between append(), extend(), and insert() in lists.
+Answer: append() adds one item at end, extend() adds elements from another iterable, insert() adds item at a specific index.
+
+22. What is the difference between remove(), pop(), and del for lists?
+Answer: remove() deletes by value, pop() deletes by index and returns item, del can delete slices or entire list.
+
+23. How are sets different from lists?
+Answer: Sets are unordered, no duplicates, cannot be indexed. Lists are ordered and allow duplicates.
+
+24. Can a set contain duplicate values? Why or why not?
+Answer: No, because sets are implemented as hash tables which only allow unique keys.
+
+25. Why is a dictionary considered a key-value data structure?
+Answer: Because it maps keys to values, each key is unique and accessed via key lookup.
+
+Advanced / Tricky
+-----------------
+26. What is the difference between is and == operators?
+Answer: 'is' checks object identity (same memory), '==' checks value equality.
+
+27. Why is True == 1 in Python?
+Answer: Because bool is subclass of int, True has value 1, False has 0.
+
+28. What is short-circuit evaluation in logical operators?
+Answer: Logical operators stop evaluating as soon as result is determined. Example: in 'A or B', if A is True, B is not checked.
+
+29. What is the output of bool([]) and why?
+Answer: False, because empty containers are considered False in boolean context.
+
+30. Explain why range() in Python 3 returns a special object instead of a list.
+Answer: To save memory and provide lazy evaluation. It generates values on demand without storing all.
