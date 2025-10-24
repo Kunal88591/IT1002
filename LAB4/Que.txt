@@ -1,0 +1,35 @@
+wap for student database using dictionary 
+
+wap to count word freuency in a dictionary 
+
+wap for palindrome check 
+
+wap to count vowels and digits in a string 
+
+wap to reverse words in sentence 
+
+wap for caesar cipher encryption
+
+wap to check string is an anagram 
+
+wap to count word freuency in a dictionary 
+
+
+programs for (function and recursion)
+
+
+wap to calculate gcd using euclidian algorithm 
+
+wap for prime number upto n 
+
+wap for recursive factorial 
+
+
+
+
+
+
+
+
+
+wap to count word freuency in a dictionary 
